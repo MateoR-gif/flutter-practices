@@ -1,5 +1,3 @@
-// password_generator_widget.dart
-
 import 'package:flutter/material.dart';
 import '../password_generator.dart';
 
@@ -36,7 +34,7 @@ class _PasswordGeneratorWidgetState extends State<PasswordGeneratorWidget> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
-            'Length of Password:',
+            'Largo de la contraseña:',
             style: TextStyle(fontSize: 18.0),
           ),
           Slider(
@@ -55,7 +53,7 @@ class _PasswordGeneratorWidgetState extends State<PasswordGeneratorWidget> {
             style: TextStyle(fontSize: 18.0),
           ),
           CheckboxListTile(
-            title: Text('Use Uppercase'),
+            title: Text('Usar mayúsculas: '),
             value: _useUpperCase,
             onChanged: (value) {
               setState(() {
@@ -64,7 +62,7 @@ class _PasswordGeneratorWidgetState extends State<PasswordGeneratorWidget> {
             },
           ),
           CheckboxListTile(
-            title: Text('Use Lowercase'),
+            title: Text('Usar minúsculas: '),
             value: _useLowerCase,
             onChanged: (value) {
               setState(() {
@@ -73,7 +71,7 @@ class _PasswordGeneratorWidgetState extends State<PasswordGeneratorWidget> {
             },
           ),
           CheckboxListTile(
-            title: Text('Use Numbers'),
+            title: Text('Usar números: '),
             value: _useNumbers,
             onChanged: (value) {
               setState(() {
@@ -82,7 +80,7 @@ class _PasswordGeneratorWidgetState extends State<PasswordGeneratorWidget> {
             },
           ),
           CheckboxListTile(
-            title: Text('Use Symbols'),
+            title: Text('Usar símbolos'),
             value: _useSymbols,
             onChanged: (value) {
               setState(() {
@@ -93,11 +91,11 @@ class _PasswordGeneratorWidgetState extends State<PasswordGeneratorWidget> {
           SizedBox(height: 20),
           ElevatedButton(
             onPressed: _generatePassword,
-            child: Text('Generate Password'),
+            child: Text('Generar Contraseña'),
           ),
           SizedBox(height: 20),
           Text(
-            'Generated Password:',
+            'Contraseña Generada: ',
             style: TextStyle(fontSize: 18.0),
           ),
           Text(

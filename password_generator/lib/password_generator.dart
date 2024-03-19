@@ -15,7 +15,7 @@ class PasswordGenerator {
     if (useSymbols) possibleChars += '!@#\$%^&*()-_+=';
     
     if (possibleChars.isEmpty) {
-      throw ArgumentError("At least one option should be selected.");
+      throw ArgumentError("Elige al menos una opción.");
     }
 
     String password = '';
