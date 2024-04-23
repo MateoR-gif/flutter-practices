@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_practice/views/pages/LoginPage.dart';
-import 'package:login_practice/views/pages/UsersPage.dart';
+import 'package:login_practice/views/pages/UsersListPage.dart';
 
 void main() {
   runApp(MainApp());
@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
       initialRoute: "login",
       routes: {
         "login":(context) => LoginPage(),
-        "users":(context) => UsersPage(),
+        "users":(context) => UserListPage(),
       },
     );
   }
